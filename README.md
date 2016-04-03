@@ -28,3 +28,11 @@ The following arguments are available to pass when setting up your project:
 `$ mix ecto.create` Creates the required databases ready for any migrations to be run
 
 `$ mix ecto.migrate` Run your applications migrations
+
+`$ mix ecto.reset` Drop the database and run all migrations
+
+`$ mix ecto.drop` Drop the database
+
+You can run any of the Ecto commands for a specific environment by setting MIX_ENV before your command like in the example below.
+
+`$ MIX_ENV=test mix ecto.reset`

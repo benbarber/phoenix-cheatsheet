@@ -22,6 +22,8 @@ The following arguments are available to pass when setting up your project:
 
 `$ mix phoenix.gen.model Post posts title:string body:text` Generates a model and an associated migration
 
+`$ mix phoenix.gen.model Post posts title:string body:text author_id:refernces:authors` Generates a model with relations and an associated migration
+
 `$ mix ecto.gen.migration add_posts_table` Generates a migration file
 
 ### Running migrations
